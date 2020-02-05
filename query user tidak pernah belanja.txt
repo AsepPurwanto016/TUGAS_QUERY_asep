@@ -1,0 +1,7 @@
+select
+id_transaksi, tanggal,no_transaksi,  usr.nama_user,br.nama_barang, br.harga, qty, total
+from transaksi as tr inner join barang as br 
+on tr.id_transaksi=br.id_barang
+inner join user as usr
+on br.id_barang=usr.id_user
+order by qty asc

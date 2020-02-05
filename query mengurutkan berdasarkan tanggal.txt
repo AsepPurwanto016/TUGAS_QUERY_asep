@@ -1,0 +1,1 @@
+select id_transaksi, br.nama_barang, usr.nama_user, br.harga,no_transaksi, tanggal, qty from transaksi as tr inner join barang as br on tr.id_transaksi=br.id_barang inner join user as usr on br.id_barang=usr.id_user ORDER BY `tr`.`tanggal` DESC 
