@@ -1,1 +1,1 @@
-select id_transaksi, tanggal,no_transaksi, usr.nama_user,br.nama_barang, br.harga, qty, qty*harga as total from transaksi as tr inner join barang as br on tr.id_transaksi=br.id_barang inner join user as usr on br.id_barang=usr.id_user 
+select id_transaksi_jam_tangan, tanggal,no_transaksi_jam_tangan, usr.nama_user_jam_tangan,br.nama_jam_tangan, br.harga_jam_tangan, quantity, quantity*br.harga_jam_tangan as total from transaksi as tr inner join barang as br on tr.id_transaksi_jam_tangan=br.id_jam_tangan inner join user as usr on br.id_jam_tangan=usr.id_user_jam_tangan 
